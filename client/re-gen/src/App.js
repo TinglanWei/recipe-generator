@@ -193,7 +193,7 @@ function App() {
         </div>
       </div>
       <div className="fixed text-s text-gray-600 right-0 bottom-0 p-4">
-      <p><a href="https://github.com/TinglanWei/recipe-generator" target="_blank" rel="noopener noreferrer">@Project Repo</a></p>
+      <p><a href="https://github.com/tinglanw/recipe-generator" target="_blank" rel="noopener noreferrer">@Project Repo</a></p>
       </div>
 
     </div>
