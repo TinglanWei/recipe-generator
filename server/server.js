@@ -79,7 +79,7 @@ app.get("/recipeStream", (req, res) => {
 async function fetchOpenAICompletionsStream(messages, callback) {
   const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-  const aiModel = "gpt-4-1106-preview";
+  const aiModel = "gpt-4o";
   try {
     const completion = await openai.chat.completions.create({
       model: aiModel,
