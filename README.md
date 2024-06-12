@@ -1,5 +1,3 @@
-# recipe-generator
-
 ## Recipe generator
 An ai powered website that generates recipes based on your input ingredients.
 ![](https://i.imgur.com/ZAZH2aB.gif)
