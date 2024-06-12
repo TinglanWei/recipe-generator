@@ -2,10 +2,10 @@
 An ai powered website that generates recipes based on your input ingredients.
 ![](https://i.imgur.com/ZAZH2aB.gif)
 
-## Demo
+### Demo
 Link:
 
-## Project setup
+### Project setup
 In the ``./client/re-gen`` and ``./server`` folder, run  
 ```
 cd ${folder-name}
@@ -18,5 +18,5 @@ You will need you own Openai API key for this project. Set up a ``.env`` file in
 OPENAI_API_KEY="your-api-key"
 ````
 
-## Credit
+### Credit
 The setup of the project is based on: https://github.com/Nitij/react-ai-recipe-generator
