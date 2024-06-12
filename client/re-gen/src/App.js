@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import ReactMarkdown from 'react-markdown';
 import "./App.css";
 
 const RecipeCard = ({ onSubmit }) => {
@@ -22,7 +23,6 @@ const RecipeCard = ({ onSubmit }) => {
   return (
     <div className="w-[400px] border rounded-lg overflow-hidden shadow-lg">
       <div className="px-6 py-4">
-        <div className="font-bold text-xl mb-2">Recipe Generator</div>
         <div className="mb-4">
           <label
             className="block text-gray-700 text-sm font-bold mb-2"
@@ -112,7 +112,7 @@ const RecipeCard = ({ onSubmit }) => {
         </div>
         <div className="px-6 py-4">
           <button
-            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            className="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="button"
             onClick={handleSubmit}
           >
@@ -183,12 +183,19 @@ function App() {
 
   return (
     <div className="App">
+      <div className="flex flex-row h-full my-4 gap-2 justify-center"></div>
+      <div className="font-bold text-3xl mb-2">Recipe Generator</div>
       <div className="flex flex-row h-full my-4 gap-2 justify-center">
         <RecipeCard onSubmit={onSubmit} />
-        <div className="w-[400px] h-[565px] text-xs text-gray-600 p-4 border rounded-lg shadow-xl whitespace-pre-line overflow-y-auto">
-          {recipeText}
+        <div className="w-[400px] h-[565px] text-s text-gray-700 p-4 border rounded-lg shadow-xl whitespace-pre-line overflow-y-auto">
+          {/* {recipeText} */}
+          <ReactMarkdown children={recipeText} />
         </div>
       </div>
+      <div className="fixed text-s text-gray-600 right-0 bottom-0 p-4">
+      <p><a href="https://github.com/TinglanWei/recipe-generator" target="_blank" rel="noopener noreferrer">@Project Repo</a></p>
+      </div>
+
     </div>
   );
 }

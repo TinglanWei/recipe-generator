@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const OpenAI = require("openai");
+require('dotenv').config();
 
 const app = express();
 const PORT = 3001;
@@ -77,7 +78,9 @@ app.get("/recipeStream", (req, res) => {
 });
 
 async function fetchOpenAICompletionsStream(messages, callback) {
-  const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+  const API_KEY = process.env.OPENAI_API_KEY;
+  console.log(API_KEY);
+  const openai = new OpenAI({ apiKey: API_KEY });
 
   const aiModel = "gpt-4o";
   try {
