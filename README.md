@@ -7,9 +7,9 @@ An ai powered website that generates recipes based on your input ingredients.
 Link:
 
 ### Project setup
-In the client and server folder, run  
+In the ``./client/re-gen`` and ``./server`` folder, run  
 ```
-cd ${client/server}
+cd ${folder-name}
 npm install
 npm start
 ```
